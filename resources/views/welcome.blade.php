@@ -13,10 +13,10 @@
 
 <div id="events-container" class="col-md-12">
     @if($search)
-        <h2>Buscando por: {{ $search }}</h2>
+    <h2>Buscando por: {{ $search }}</h2>
     @else
-        <h2>Próximos Eventos</h2>
-        <p class="subtitle">Vejas os eventos dos próximos dias</p>
+    <h2>Próximos Eventos</h2>
+    <p class="subtitle">Vejas os eventos dos próximos dias</p>
     @endif
     <div id="cards-container" class="row">
         @foreach ($events as $event)
@@ -32,10 +32,10 @@
         @endforeach
     </div>
     @if(count($events) == 0 && $search)
-        <p>Não foi possível encontrar nenhum evento com: <strong> {{ $search }} </strong> </p>
-        <a href="/" class="btn btn-primary"> Ver Todos</a>
+    <p>Não foi possível encontrar nenhum evento com: <strong> {{ $search }} </strong> </p>
+    <a href="/" class="btn btn-primary"> Ver Todos</a>
     @elseif(count($events) == 0)
-        <p>Não há eventos disponíveis no momento!</p>
+    <p>Não há eventos disponíveis no momento!</p>
     @endif
 </div>
 

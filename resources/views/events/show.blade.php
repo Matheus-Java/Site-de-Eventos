@@ -22,12 +22,9 @@
             </p>
             <form action="/events/join/{{ $event->id }}" method="POST">
                 @csrf
-                <a href="/events/join/{{ $event->id }}"
-                     class="btn btn-primary"
-                     onclick="
+                <a href="/events/join/{{ $event->id }}" class="btn btn-primary" onclick="
                      event.preventDefault();
-                     this.closest('form').submit();"
-                     id="event-submit">Confirmar Presença</a>
+                     this.closest('form').submit();" id="event-submit">Confirmar Presença</a>
             </form>
             <h3>O evento conta com:</h3>
             <ul id="items-list">
